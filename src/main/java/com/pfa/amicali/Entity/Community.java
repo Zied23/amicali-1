@@ -1,7 +1,6 @@
 package com.pfa.amicali.Entity;
 
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;

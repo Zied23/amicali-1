@@ -1,5 +1,7 @@
 package com.pfa.amicali.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -56,7 +58,7 @@ public class Subscriber implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-
+    @JsonIgnore
     public List<Community> getCommunityToManage() {
         return communityToManage;
     }
@@ -64,7 +66,7 @@ public class Subscriber implements Serializable {
     public void setCommunityToManage(List<Community> communityToManage) {
         this.communityToManage = communityToManage;
     }
-
+    @JsonIgnore
     public List<Community> getCommunityIn() {
         return communityIn;
     }
